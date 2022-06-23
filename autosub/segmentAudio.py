@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import os
-from logger import *
+from . import logger
 import numpy as np
 
-from trainAudio import * as TA
+from . import trainAudio as TA
 from pydub import AudioSegment
-from featureExtraction import * as FE
+from . import featureExtraction as FE
 import scipy.io.wavfile as wavfile
 
 _logger = logger.setup_applevel_logger(__name__)
